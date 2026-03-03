@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout Inteligente <br>💎</h1>
+        <form id="checkoutForm">
+            <label for="inputPreco">Preço (R$):</label>
+            <input type="text" id="inputPreco" placeholder="Ex: 125.50" required>
+
+            <label for="inputQtd">Quantidade:</label>
+            <input type="text" id="inputQtd" placeholder="Ex: 3" required>
+
+            <label for="inputCupom">
+                <input type="checkbox" id="inputCupom">
+                Aplicar cupom de desconto (10%)
+            </label>
+
+            <button type="submit">Calcular Total</button>
+        </form>
+
+        <div class="resultado" id="resultado">
+            <!-- Resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
